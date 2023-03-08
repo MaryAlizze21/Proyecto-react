@@ -1,0 +1,58 @@
+/*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}*/
+
+.nav-bar .left{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    background-color: violet;
+    height: 130px;
+}
+
+.logo{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.titulo{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.container-cart-icon{
+    width: 70px;
+    height: 70px;
+    stroke: #b39de9;
+    padding-top: 30px;
+    padding-left: 120px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.container-cart-icon:hover{
+    cursor: pointer;
+}
+
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 12px;
+}
