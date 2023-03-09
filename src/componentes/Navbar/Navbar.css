@@ -7,7 +7,7 @@
 .nav-bar .left{
     display: grid;
     grid-template-columns: 30% 40% 30%;
-    background-color: violet;
+    background-color: #a957bc;
     height: 130px;
 }
 
