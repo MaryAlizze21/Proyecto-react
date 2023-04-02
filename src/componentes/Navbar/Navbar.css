@@ -4,29 +4,33 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }*/
 
+.nav-bar{
+    background-color: #a957bc;
+}
 .nav-bar .left{
     display: grid;
-    grid-template-columns: 30% 40% 30%;
-    background-color: #a957bc;
+    grid-template-columns: 20% 60% 20%;
     height: 130px;
 }
 
+/*primera parte*/
 .logo{
     text-align: center;
     padding-top: 30px;
 }
-
+/*segunda parte*/
 .titulo{
     padding-top: 20px;
     text-align: center;
 }
 
+/*tercera parte*/
 .container-cart-icon{
     width: 70px;
     height: 70px;
     stroke: #b39de9;
     padding-top: 30px;
-    padding-left: 120px;
+    padding-left: 50px;
 
     position: relative;
     z-index: 1;
@@ -55,4 +59,123 @@
 
 #contador-productos{
     font-size: 12px;
+}
+
+
+/*CARRITO COMPRAS*/
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8; /*era 0.8 originalmente*/
+}
+
+.titulo-producto-carrito{
+    font-size: 17px;
+    margin-left: 5px; 
+}
+
+.precio-producto-carrito{
+    font-weight: 400;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;  
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+
+/**celular**/
+@media (max-width: 767px) {
+    .nav-bar .left{
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+    }
+
+    .logo{
+        text-align: center;
+    }
+    /*segunda parte*/
+    .titulo{
+        padding-top: 3px;
+    }
+
+    .container-cart-icon{
+        padding-left: 20px;
+    }
+}
+
+/**tablet**/
+@media (min-width: 768px) and (max-width: 990px) {
+    .nav-bar .left{
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+    }
+
+    .logo{
+        text-align: center;
+    }
+    /*segunda parte*/
+    .titulo{
+        padding-top: 10px;
+    }
+
+    .container-cart-icon{
+        padding-left: 20px;
+    }
 }

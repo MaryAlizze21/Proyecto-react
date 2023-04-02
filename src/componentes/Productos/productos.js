@@ -13,13 +13,13 @@ export const ProductosLista = () => {
                     </div>
                 </a>
                 <div className='producto-footer'>
-                    <h1>POLERA JOJO</h1>
-                    <p>Categoria: ropa</p>
+                    <h1>JOJO BIZARRE ADVENTURE</h1>
+                    <p>Polera</p>
                     <p className='price'>$120</p>
                 </div>
                 <div className='buttom'>
                     <div><a href='#' className='btn'>Detalles</a></div>
-                    <button className='btn'>Añadir al Carrito</button>
+                    <button className='btn-add-cart'>Añadir al Carrito</button>
                 </div>
             </div>
             <div className='producto'>
@@ -29,13 +29,13 @@ export const ProductosLista = () => {
                     </div>
                 </a>
                 <div className='producto-footer'>
-                    <h1>POLERA ISOKA</h1>
-                    <p>Categoria: ropa</p>
+                    <h1>ISOKA</h1>
+                    <p>Polera</p>
                     <p className='price'>$90</p>
                 </div>
                 <div className='buttom'>
                     <div><a href='#' className='btn'>Detalles</a></div>
-                    <button className='btn'>Añadir al Carrito</button>
+                    <button className='btn-add-cart'>Añadir al Carrito</button>
                 </div>
             </div>
             <div className='producto'>
@@ -45,13 +45,13 @@ export const ProductosLista = () => {
                     </div>
                 </a>
                 <div className='producto-footer'>
-                    <h1>POLERA LUFFY</h1>
-                    <p>Categoria: ropa</p>
+                    <h1>MONKEY D. LUFFY</h1>
+                    <p>Polera</p>
                     <p className='price'>$135</p>
                 </div>
                 <div className='buttom'>
                     <div><a href='#' className='btn'>Detalles</a></div>
-                    <button className='btn'>Añadir al Carrito</button>
+                    <button className='btn-add-cart'>Añadir al Carrito</button>
                 </div>
             </div>
         </div>
